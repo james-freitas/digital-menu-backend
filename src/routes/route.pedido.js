@@ -16,7 +16,7 @@ routePedido.get("/pedidos", function(req, res){
 
 routePedido.post("/pedidos", function(req, res){
 
-  let sql = `insert into pedido(id_usuaio, nome, email, fone, endereco)
+  let sql = `insert into pedido(id_usuario, nome, email, fone, endereco,
             bairro, cidade, uf, cep, total, dt_pedido) values(?,?,?,?,?,?,?,?,?,?, current_date) 
             returning id_pedido`;
 

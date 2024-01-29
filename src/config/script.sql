@@ -25,7 +25,8 @@ create table pedido(
 	cidade varchar(50),
 	uf varchar(2),
 	cep varchar(10),	
-	total decimal(9,2)	
+	total decimal(9,2),
+	dt_pedido date,	
 );
 
 create table pedido_item(
@@ -39,7 +40,6 @@ create table pedido_item(
 
 insert into usuario(nome, email, senha)
 values('Heber Stein Mazutti', 'heber@teste.com.br', '');
-
 
 insert into produto(nome, descricao, preco, foto)
 values('Spicy Burguer', 'Hamburguer de 250g, queijo, tomate, alface e cebola', 
